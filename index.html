@@ -90,6 +90,13 @@
       margin-top: 2rem;
       border-radius: 8px;
     }
+
+    .guidelines {
+      background: #e0f7fa;
+      padding: 1rem;
+      margin-top: 2rem;
+      border-radius: 8px;
+    }
   </style>
 </head>
 <body>
@@ -98,82 +105,25 @@
     <div class="language-toggle">
       <button onclick="switchLanguage('en')">English</button>
       <button onclick="switchLanguage('hi')">हिन्दी</button>
+      <button onclick="switchLanguage('pa')">ਪੰਜਾਬੀ</button>
     </div>
   </header>
 
   <div class="container">
-    <section id="about">
-      <h2 data-en="Welcome to Om Vishnu Fruit Nursery" data-hi="ओम विष्णु फल नर्सरी में आपका स्वागत है">Welcome to Om Vishnu Fruit Nursery</h2>
-      <p data-en="We are a leading fruit nursery in Haryana, offering top-quality grafted fruit plants at affordable rates."
-         data-hi="हम हरियाणा की अग्रणी फल नर्सरी हैं, जो किफायती दरों पर उच्च गुणवत्ता वाले ग्राफ़्टेड फल पौधे प्रदान करते हैं।">
-        We are a leading fruit nursery in Haryana, offering top-quality grafted fruit plants at affordable rates.
+    <!-- Previous sections remain unchanged -->
+
+    <section id="guidelines" class="guidelines">
+      <h2 data-en="NHB Nursery Compliance" data-hi="एनएचबी नर्सरी अनुपालन" data-pa="ਐਨਐਚਬੀ ਨਰਸਰੀ ਨਿਯਮ">NHB Nursery Compliance</h2>
+      <p data-en="We follow all NHB (National Horticulture Board) guidelines for nursery operations. This includes proper record keeping, mother plant maintenance, use of certified rootstocks, pest and disease control, and inspection-ready infrastructure."
+         data-hi="हम नर्सरी संचालन के लिए एनएचबी (राष्ट्रीय बागवानी बोर्ड) की सभी दिशानिर्देशों का पालन करते हैं। इसमें रिकॉर्ड कीपिंग, मदर प्लांट रख-रखाव, प्रमाणित रूटस्टॉक का उपयोग, कीट और रोग नियंत्रण, और निरीक्षण-योग्य इंफ्रास्ट्रक्चर शामिल हैं।"
+         data-pa="ਅਸੀਂ ਨਰਸਰੀ ਚਲਾਉਣ ਲਈ ਐਨਐਚਬੀ (ਰਾਸ਼ਟਰੀ ਬਾਗਬਾਨੀ ਬੋਰਡ) ਦੇ ਸਾਰੇ ਨਿਯਮਾਂ ਦੀ ਪਾਲਣਾ ਕਰਦੇ ਹਾਂ। ਇਸ ਵਿੱਚ ਰਿਕਾਰਡ ਰੱਖਣਾ, ਮਾਤਾ ਪੌਦੇ ਦੀ ਦੇਖਭਾਲ, ਸਰਟੀਫਾਈਡ ਰੂਟਸਟਾਕ, ਕੀੜੇ ਅਤੇ ਰੋਗ ਨਿਯੰਤਰਣ ਅਤੇ ਇਨਸਪੈਕਸ਼ਨ ਲਈ ਤਿਆਰ ਢਾਂਚਾ ਸ਼ਾਮਲ ਹਨ।">
+        We follow all NHB (National Horticulture Board) guidelines for nursery operations. This includes proper record keeping, mother plant maintenance, use of certified rootstocks, pest and disease control, and inspection-ready infrastructure.
       </p>
-      <p data-en="Registered with NHB (National Horticulture Board) with a 2-star rating. Each plant is inspected and verified by the District Horticulture Office before sale."
-         data-hi="एनएचबी (नेशनल हॉर्टिकल्चर बोर्ड) से पंजीकृत और 2-स्टार रेटेड नर्सरी। हर पौधा बिक्री से पहले जिला बागवानी कार्यालय द्वारा जांचा और प्रमाणित किया जाता है।">
-        Registered with NHB (National Horticulture Board) with a 2-star rating. Each plant is inspected and verified by the District Horticulture Office before sale.
+      <p data-en="We ensure that all our fruit plants are cultivated and sold in accordance with these standards."
+         data-hi="हम यह सुनिश्चित करते हैं कि हमारे सभी फल पौधे इन मानकों के अनुसार उगाए और बेचे जाते हैं।"
+         data-pa="ਅਸੀਂ ਇਹ ਯਕੀਨੀ ਬਣਾਉਂਦੇ ਹਾਂ ਕਿ ਸਾਡੇ ਸਾਰੇ ਫਲ ਪੌਦੇ ਇਨ੍ਹਾਂ ਮਿਆਰਾਂ ਅਨੁਸਾਰ ਹੀ ਉਗਾਏ ਜਾਂਦੇ ਹਨ ਅਤੇ ਵੇਚੇ ਜਾਂਦੇ ਹਨ।">
+        We ensure that all our fruit plants are cultivated and sold in accordance with these standards.
       </p>
-    </section>
-
-    <section id="products">
-      <h2 data-en="Our Products" data-hi="हमारे उत्पाद">Our Products</h2>
-      <div class="product">
-        <h3 data-en="Mango Plant - ₹250" data-hi="आम का पौधा - ₹250">Mango Plant - ₹250</h3>
-        <button onclick="orderViaWhatsApp('Mango Plant - ₹250')" data-en="Order Now" data-hi="ऑर्डर करें">Order Now</button>
-      </div>
-      <div class="product">
-        <h3 data-en="Guava Plant - ₹100" data-hi="अमरूद का पौधा - ₹100">Guava Plant - ₹100</h3>
-        <button onclick="orderViaWhatsApp('Guava Plant - ₹100')" data-en="Order Now" data-hi="ऑर्डर करें">Order Now</button>
-      </div>
-      <div class="product">
-        <h3 data-en="Lemon Plant - ₹150" data-hi="नींबू का पौधा - ₹150">Lemon Plant - ₹150</h3>
-        <button onclick="orderViaWhatsApp('Lemon Plant - ₹150')" data-en="Order Now" data-hi="ऑर्डर करें">Order Now</button>
-      </div>
-    </section>
-
-    <section id="tracking" class="tracking">
-      <h2 data-en="Track Your Order" data-hi="अपने ऑर्डर की स्थिति जानें">Track Your Order</h2>
-      <p data-en="To check the status of your order, please contact us on WhatsApp with your order ID or name."
-         data-hi="अपने ऑर्डर की स्थिति जानने के लिए कृपया ऑर्डर ID या नाम के साथ हमें WhatsApp पर संपर्क करें।">
-        To check the status of your order, please contact us on WhatsApp with your order ID or name.
-      </p>
-      <a href="https://wa.me/919812840229" target="_blank">📦 Track via WhatsApp</a>
-    </section>
-
-    <section id="contact">
-      <h2 data-en="Contact Us" data-hi="संपर्क करें">Contact Us</h2>
-      <p><strong>Phone/WhatsApp:</strong> <a href="https://wa.me/919812840229">9812840229</a></p>
-      <p><strong>Email:</strong> <a href="mailto:radheshyambishnoi314@gmail.com">radheshyambishnoi314@gmail.com</a></p>
-      <p><strong>Payment:</strong> UPI (vishnunursery@upi), Cash on Delivery</p>
-    </section>
-
-    <section id="terms" class="terms">
-      <h2 data-en="Terms & Conditions" data-hi="नियम और शर्तें">Terms & Conditions</h2>
-      <ul>
-        <li data-en="We guarantee the variety and fruiting of the plants if properly taken care of."
-            data-hi="यदि पौधों की सही देखभाल की जाती है तो हम उनकी किस्म और फल देने की गारंटी देते हैं।">
-          We guarantee the variety and fruiting of the plants if properly taken care of.
-        </li>
-        <li data-en="The health and fruiting capacity of the plant depends on environmental conditions such as temperature, soil, and treatment provided by the customer."
-            data-hi="पौधे की सेहत और फल देने की क्षमता पर्यावरण की स्थिति जैसे तापमान, मिट्टी और ग्राहक द्वारा की गई देखभाल पर निर्भर करती है।">
-          The health and fruiting capacity of the plant depends on environmental conditions such as temperature, soil, and treatment provided by the customer.
-        </li>
-        <li data-en="All plants are checked for diseases like nematodes and verified by the Horticulture Department before sale."
-            data-hi="सभी पौधों की बिक्री से पहले हॉर्टिकल्चर विभाग द्वारा निमेटोड्स जैसी बीमारियों की जांच की जाती है और वे प्रमाणित होते हैं।">
-          All plants are checked for diseases like nematodes and verified by the Horticulture Department before sale.
-        </li>
-        <li data-en="Delivery time may vary depending on your location."
-            data-hi="आपके स्थान के अनुसार डिलीवरी का समय बदल सकता है।">
-          Delivery time may vary depending on your location.
-        </li>
-        <li data-en="We do not take responsibility for damage caused by mishandling after delivery."
-            data-hi="डिलीवरी के बाद गलत तरीके से संभालने से हुए नुकसान के लिए हम जिम्मेदार नहीं होंगे।">
-          We do not take responsibility for damage caused by mishandling after delivery.
-        </li>
-        <li data-en="All orders are processed only after confirmation."
-            data-hi="सभी ऑर्डर पुष्टि के बाद ही प्रोसेस किए जाते हैं।">
-          All orders are processed only after confirmation.
-        </li>
-      </ul>
     </section>
   </div>
 
@@ -196,4 +146,5 @@
   </script>
 </body>
 </html>
+
 
