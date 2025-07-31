@@ -14,11 +14,17 @@
 
     body {
       font-family: 'Segoe UI', sans-serif;
-      background: var(--background);
+      background: linear-gradient(to bottom, #e0f2f1, #fdfcfb);
       margin: 0;
       padding: 0;
       color: var(--text);
       scroll-behavior: smooth;
+      animation: backgroundFade 20s infinite alternate;
+    }
+
+    @keyframes backgroundFade {
+      0% { background-color: #fdfcfb; }
+      100% { background-color: #e6ffe6; }
     }
 
     header {
@@ -100,7 +106,7 @@
       color: white;
     }
 
-    .tracking, .terms, .guidelines {
+    .tracking, .terms, .guidelines, .compliance {
       margin-top: 2rem;
       padding: 1rem;
       border-radius: 8px;
@@ -118,6 +124,10 @@
     .guidelines {
       background: #e0f7fa;
     }
+
+    .compliance {
+      background: #f5f5dc;
+    }
   </style>
 </head>
 <body>
@@ -131,57 +141,61 @@
   </header>
 
   <div class="container">
+    <section class="tracking">
+      <h3>Order Tracking</h3>
+      <p>Your order status will be sent via SMS and can be tracked through our customer care number.</p>
+    </section>
 
     <section class="category-section">
-      <h2 data-en="Ornamental Plants" data-hi="सजावटी पौधे" data-pa="ਸਜਾਵਟੀ ਪੌਦੇ">Ornamental Plants</h2>
+      <h2>Ornamental Plants</h2>
       <div class="product">
-        <img src="https://source.unsplash.com/rose-plant" alt="Rose Plant">
+        <img src="https://source.unsplash.com/120x120/?ornamental-plant" alt="Ornamental Plant" />
         <div class="product-details">
-          <h3 data-en="Rose Plant" data-hi="गुलाब का पौधा" data-pa="ਗੁਲਾਬ ਦਾ ਪੌਦਾ">Rose Plant</h3>
-          <p data-en="Beautiful flowering rose plant." data-hi="सुंदर फूल वाला गुलाब का पौधा।" data-pa="ਸੁੰਦਰ ਫੁੱਲ ਵਾਲਾ ਗੁਲਾਬ ਦਾ ਪੌਦਾ।">Beautiful flowering rose plant.</p>
-          <button onclick="orderViaWhatsApp('Rose Plant')" data-en="Order Now" data-hi="अभी ऑर्डर करें" data-pa="ਹੁਣੇ ਆਰਡਰ ਕਰੋ">Order Now</button>
+          <h3>Marigold</h3>
+          <p>Beautiful flowering plant for decoration.</p>
+          <button onclick="orderViaWhatsApp('Marigold')">Order</button>
         </div>
       </div>
     </section>
 
     <section class="category-section">
-      <h2 data-en="Fruit Plants" data-hi="फलदार पौधे" data-pa="ਫਲਦਾਰ ਪੌਦੇ">Fruit Plants</h2>
+      <h2>Fruit Plants</h2>
       <div class="product">
-        <img src="https://source.unsplash.com/mango-tree" alt="Mango Plant">
+        <img src="https://source.unsplash.com/120x120/?fruit-tree" alt="Fruit Plant" />
         <div class="product-details">
-          <h3 data-en="Mango Plant" data-hi="आम का पौधा" data-pa="ਅੰਬ ਦਾ ਪੌਦਾ">Mango Plant</h3>
-          <p data-en="High-quality grafted mango plant." data-hi="उच्च गुणवत्ता वाला आम का पौधा।" data-pa="ਉੱਚ ਗੁਣਵੱਤਾ ਵਾਲਾ ਅੰਬ ਦਾ ਪੌਦਾ।">High-quality grafted mango plant.</p>
-          <button onclick="orderViaWhatsApp('Mango Plant')" data-en="Order Now" data-hi="अभी ऑर्डर करें" data-pa="ਹੁਣੇ ਆਰਡਰ ਕਰੋ">Order Now</button>
+          <h3>Mango</h3>
+          <p>Premium grafted mango variety certified by NHB.</p>
+          <button onclick="orderViaWhatsApp('Mango')">Order</button>
         </div>
       </div>
     </section>
 
     <section class="category-section">
-      <h2 data-en="Grasses" data-hi="घास" data-pa="ਘਾਹ">Grasses</h2>
+      <h2>Grass & Vegetables</h2>
       <div class="product">
-        <img src="https://source.unsplash.com/grass" alt="Doob Grass">
+        <img src="https://source.unsplash.com/120x120/?vegetable-plant" alt="Vegetable Plant" />
         <div class="product-details">
-          <h3 data-en="Doob Grass" data-hi="दूब घास" data-pa="ਦੂਬ ਘਾਹ">Doob Grass</h3>
-          <p data-en="Premium lawn grass for gardens." data-hi="बगीचों के लिए प्रीमियम लॉन घास।" data-pa="ਬਾਗਾਂ ਲਈ ਪ੍ਰੀਮੀਅਮ ਲੌਨ ਘਾਹ।">Premium lawn grass for gardens.</p>
-          <button onclick="orderViaWhatsApp('Doob Grass')" data-en="Order Now" data-hi="अभी ऑर्डर करें" data-pa="ਹੁਣੇ ਆਰਡਰ ਕਰੋ">Order Now</button>
+          <h3>Tomato</h3>
+          <p>Healthy vegetable seedlings ready for planting.</p>
+          <button onclick="orderViaWhatsApp('Tomato')">Order</button>
         </div>
       </div>
     </section>
 
-    <section class="category-section">
-      <h2 data-en="Vegetables" data-hi="सब्जियां" data-pa="ਸਬਜ਼ੀਆਂ">Vegetables</h2>
-      <div class="product">
-        <img src="https://source.unsplash.com/tomato-plant" alt="Tomato Seedling">
-        <div class="product-details">
-          <h3 data-en="Tomato Seedling" data-hi="टमाटर का पौधा" data-pa="ਟਮਾਟਰ ਦਾ ਪੌਦਾ">Tomato Seedling</h3>
-          <p data-en="Healthy tomato seedling ready for transplant." data-hi="स्वस्थ टमाटर का पौधा, रोपाई के लिए तैयार।" data-pa="ਸਿਹਤਮੰਦ ਟਮਾਟਰ ਦਾ ਪੌਦਾ ਰੋਪਣ ਲਈ ਤਿਆਰ।">Healthy tomato seedling ready for transplant.</p>
-          <button onclick="orderViaWhatsApp('Tomato Seedling')" data-en="Order Now" data-hi="अभी ऑर्डर करें" data-pa="ਹੁਣੇ ਆਰਡਰ ਕਰੋ">Order Now</button>
-        </div>
-      </div>
+    <section class="terms">
+      <h3>Terms and Conditions</h3>
+      <p>We guarantee the plant's variety and fruiting potential if properly cared for. The health and productivity of the plant depend on the treatment, environmental conditions, and temperature. Each plant is certified and verified by the District Horticulture Office and thoroughly checked for diseases like nematodes before being delivered to customers.</p>
     </section>
 
-    <!-- tracking, terms, guidelines remain unchanged -->
+    <section class="guidelines">
+      <h3>NHB Guidelines and Certification</h3>
+      <p>Our nursery is registered with the National Horticulture Board (NHB) and holds a 2-star rating. We sell only those plants that are examined by horticulture experts to be disease-free. We strictly follow NHB rules, including grafted plant certification, rootstock quality, labeling, packaging, pest and disease control, and nursery hygiene.</p>
+    </section>
 
+    <section class="compliance">
+      <h3>Our Commitments</h3>
+      <p>At Om Vishnu Fruit Nursery, we sell plants only after fulfilling all required NHB guidelines and health certification processes. We prioritize our customer's trust and aim to deliver healthy, high-quality plants with verified documentation and inspection.</p>
+    </section>
   </div>
 
   <footer>
