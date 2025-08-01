@@ -128,6 +128,13 @@
     .compliance {
       background: #f5f5dc;
     }
+
+    #cart-section {
+      background: #fff0f5;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-top: 2rem;
+    }
   </style>
 </head>
 <body>
@@ -153,7 +160,7 @@
         <div class="product-details">
           <h3>Marigold</h3>
           <p>Beautiful flowering plant for decoration.</p>
-          <button onclick="orderViaWhatsApp('Marigold')">Order</button>
+          <button onclick="addToCart('Marigold')">Add to Cart</button>
         </div>
       </div>
     </section>
@@ -165,7 +172,7 @@
         <div class="product-details">
           <h3>Mango</h3>
           <p>Premium grafted mango variety certified by NHB.</p>
-          <button onclick="orderViaWhatsApp('Mango')">Order</button>
+          <button onclick="addToCart('Mango')">Add to Cart</button>
         </div>
       </div>
     </section>
@@ -177,9 +184,15 @@
         <div class="product-details">
           <h3>Tomato</h3>
           <p>Healthy vegetable seedlings ready for planting.</p>
-          <button onclick="orderViaWhatsApp('Tomato')">Order</button>
+          <button onclick="addToCart('Tomato')">Add to Cart</button>
         </div>
       </div>
+    </section>
+
+    <section id="cart-section">
+      <h3>Your Cart</h3>
+      <ul id="cart-items"></ul>
+      <button onclick="checkoutCart()">Buy All</button>
     </section>
 
     <section class="terms">
@@ -209,14 +222,31 @@
       });
     }
 
-    function orderViaWhatsApp(productName) {
+    let cart = [];
+    function addToCart(productName) {
+      cart.push(productName);
+      updateCartUI();
+    }
+
+    function updateCartUI() {
+      const cartList = document.getElementById('cart-items');
+      cartList.innerHTML = '';
+      cart.forEach((item, index) => {
+        const li = document.createElement('li');
+        li.textContent = item;
+        cartList.appendChild(li);
+      });
+    }
+
+    function checkoutCart() {
       const phone = '919812840229';
-      const message = encodeURIComponent(`Hello, I want to order: ${productName}`);
+      const message = encodeURIComponent(`Hello, I want to buy: ${cart.join(', ')}`);
       window.open(`https://wa.me/${phone}?text=${message}`, '_blank');
     }
   </script>
 </body>
 </html>
+
 
 
 
