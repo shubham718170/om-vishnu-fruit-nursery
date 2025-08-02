@@ -112,22 +112,10 @@
       border-radius: 8px;
     }
 
-    .tracking {
-      background: #fff7e6;
-      border-left: 5px solid var(--accent);
-    }
-
-    .terms {
-      background: #f0f0f0;
-    }
-
-    .guidelines {
-      background: #e0f7fa;
-    }
-
-    .compliance {
-      background: #f5f5dc;
-    }
+    .tracking { background: #fff7e6; border-left: 5px solid var(--accent); }
+    .terms { background: #f0f0f0; }
+    .guidelines { background: #e0f7fa; }
+    .compliance { background: #f5f5dc; }
 
     #cart-section {
       background: #fff0f5;
@@ -139,7 +127,12 @@
 </head>
 <body>
   <header>
-    <h1 id="site-title">Om Vishnu Fruit Nursery</h1>
+    <h1 id="site-title"
+        data-en="Om Vishnu Fruit Nursery"
+        data-hi="ॐ विष्णु फ्रूट नर्सरी"
+        data-pa="ਓਮ ਵਿਸ਼ਨੂ ਫਲ ਨਰਸਰੀ">
+        Om Vishnu Fruit Nursery
+    </h1>
     <div class="language-toggle">
       <button onclick="switchLanguage('en')">English</button>
       <button onclick="switchLanguage('hi')">हिन्दी</button>
@@ -149,78 +142,162 @@
 
   <div class="container">
     <section class="tracking">
-      <h3>Order Tracking</h3>
-      <p>Your order status will be sent via SMS and can be tracked through our customer care number.</p>
+      <h3
+        data-en="Order Tracking"
+        data-hi="ऑर्डर ट्रैकिंग"
+        data-pa="ਆਰਡਰ ਟਰੈਕਿੰਗ">
+        Order Tracking
+      </h3>
+      <p
+        data-en="Your order status will be sent via SMS and can be tracked through our customer care number."
+        data-hi="आपका ऑर्डर स्थिति SMS के माध्यम से भेजी जाएगी और हमारे ग्राहक सेवा नंबर के माध्यम से ट्रैक की जा सकती है।"
+        data-pa="ਤੁਹਾਡੀ ਆਰਡਰ ਦੀ ਸਥਿਤੀ SMS ਰਾਹੀਂ ਭੇਜੀ ਜਾਵੇਗੀ ਅਤੇ ਸਾਡੀ ਗਾਹਕ ਸੇਵਾ ਨੰਬਰ ਰਾਹੀਂ ਟਰੈਕ ਕੀਤੀ ਜਾ ਸਕਦੀ ਹੈ।">
+        Your order status will be sent via SMS and can be tracked through our customer care number.
+      </p>
     </section>
 
     <section class="category-section">
-      <h2>Ornamental Plants</h2>
+      <h2
+        data-en="Ornamental Plants"
+        data-hi="सजावटी पौधे"
+        data-pa="ਸਜਾਵਟੀ ਪੌਦੇ">Ornamental Plants</h2>
       <div class="product">
         <img src="https://source.unsplash.com/120x120/?ornamental-plant" alt="Ornamental Plant" />
         <div class="product-details">
           <h3>Marigold</h3>
-          <p>Beautiful flowering plant for decoration.</p>
-          <button onclick="addToCart('Marigold')">Add to Cart</button>
+          <p
+            data-en="Beautiful flowering plant for decoration."
+            data-hi="सजावट के लिए सुंदर फूल वाला पौधा।"
+            data-pa="ਸਜਾਵਟ ਲਈ ਸੋਹਣਾ ਫੁੱਲਦਾਰ ਪੌਦਾ।">
+            Beautiful flowering plant for decoration.
+          </p>
+          <button onclick="addToCart('Marigold')"
+                  data-en="Add to Cart"
+                  data-hi="कार्ट में जोड़ें"
+                  data-pa="ਕਾਰਟ ਵਿੱਚ ਸ਼ਾਮਲ ਕਰੋ">Add to Cart</button>
         </div>
       </div>
     </section>
 
     <section class="category-section">
-      <h2>Fruit Plants</h2>
+      <h2
+        data-en="Fruit Plants"
+        data-hi="फलदार पौधे"
+        data-pa="ਫਲਦਾਰ ਪੌਦੇ">Fruit Plants</h2>
       <div class="product">
         <img src="https://source.unsplash.com/120x120/?fruit-tree" alt="Fruit Plant" />
         <div class="product-details">
           <h3>Mango</h3>
-          <p>Premium grafted mango variety certified by NHB.</p>
-          <button onclick="addToCart('Mango')">Add to Cart</button>
+          <p
+            data-en="Premium grafted mango variety certified by NHB."
+            data-hi="एनएचबी द्वारा प्रमाणित प्रीमियम कलमी आम की किस्म।"
+            data-pa="ਐਨਐਚਬੀ ਵੱਲੋਂ ਪ੍ਰਮਾਣਿਤ ਪ੍ਰੀਮੀਅਮ ਕਲਮੀ ਆਮ ਦੀ ਕਿਸਮ।">
+            Premium grafted mango variety certified by NHB.
+          </p>
+          <button onclick="addToCart('Mango')"
+                  data-en="Add to Cart"
+                  data-hi="कार्ट में जोड़ें"
+                  data-pa="ਕਾਰਟ ਵਿੱਚ ਸ਼ਾਮਲ ਕਰੋ">Add to Cart</button>
         </div>
       </div>
     </section>
 
     <section class="category-section">
-      <h2>Grass & Vegetables</h2>
+      <h2
+        data-en="Grass & Vegetables"
+        data-hi="घास और सब्जियां"
+        data-pa="ਘਾਹ ਅਤੇ ਸਬਜ਼ੀਆਂ">Grass & Vegetables</h2>
       <div class="product">
         <img src="https://source.unsplash.com/120x120/?vegetable-plant" alt="Vegetable Plant" />
         <div class="product-details">
           <h3>Tomato</h3>
-          <p>Healthy vegetable seedlings ready for planting.</p>
-          <button onclick="addToCart('Tomato')">Add to Cart</button>
+          <p
+            data-en="Healthy vegetable seedlings ready for planting."
+            data-hi="स्वस्थ सब्जियों की पौध रोपाई के लिए तैयार।"
+            data-pa="ਸਿਹਤਮੰਦ ਸਬਜ਼ੀਆਂ ਦੀ ਨਰਸਰੀ ਰੋਪਣ ਲਈ ਤਿਆਰ।">
+            Healthy vegetable seedlings ready for planting.
+          </p>
+          <button onclick="addToCart('Tomato')"
+                  data-en="Add to Cart"
+                  data-hi="कार्ट में जोड़ें"
+                  data-pa="ਕਾਰਟ ਵਿੱਚ ਸ਼ਾਮਲ ਕਰੋ">Add to Cart</button>
         </div>
       </div>
     </section>
 
     <section id="cart-section">
-      <h3>Your Cart</h3>
+      <h3
+        data-en="Your Cart"
+        data-hi="आपकी टोकरी"
+        data-pa="ਤੁਹਾਡੀ ਕਾਰਟ">Your Cart</h3>
       <ul id="cart-items"></ul>
-      <button onclick="checkoutCart()">Buy All</button>
+      <button onclick="checkoutCart()"
+              data-en="Buy All"
+              data-hi="सभी खरीदें"
+              data-pa="ਸਭ ਖਰੀਦੋ">Buy All</button>
     </section>
 
     <section class="terms">
-      <h3>Terms and Conditions</h3>
-      <p>We guarantee the plant's variety and fruiting potential if properly cared for. The health and productivity of the plant depend on the treatment, environmental conditions, and temperature. Each plant is certified and verified by the District Horticulture Office and thoroughly checked for diseases like nematodes before being delivered to customers.</p>
+      <h3
+        data-en="Terms and Conditions"
+        data-hi="नियम और शर्तें"
+        data-pa="ਨਿਯਮ ਅਤੇ ਸ਼ਰਤਾਂ">Terms and Conditions</h3>
+      <p
+        data-en="We guarantee the plant's variety and fruiting potential if properly cared for..."
+        data-hi="हम पौधों की किस्म और फलने की क्षमता की गारंटी देते हैं यदि उन्हें सही ढंग से रखा जाए..."
+        data-pa="ਜੇ ਪੌਦਿਆਂ ਦੀ ਸਹੀ ਦੇਖਭਾਲ ਕੀਤੀ ਜਾਵੇ ਤਾਂ ਅਸੀਂ ਕਿਸਮ ਅਤੇ ਫਲਣ ਦੀ ਗਾਰੰਟੀ ਦਿੰਦੇ ਹਾਂ...">
+        We guarantee the plant's variety and fruiting potential if properly cared for...
+      </p>
     </section>
 
     <section class="guidelines">
-      <h3>NHB Guidelines and Certification</h3>
-      <p>Our nursery is registered with the National Horticulture Board (NHB) and holds a 2-star rating. We sell only those plants that are examined by horticulture experts to be disease-free. We strictly follow NHB rules, including grafted plant certification, rootstock quality, labeling, packaging, pest and disease control, and nursery hygiene.</p>
+      <h3
+        data-en="NHB Guidelines and Certification"
+        data-hi="एनएचबी दिशानिर्देश और प्रमाणन"
+        data-pa="ਐਨਐਚਬੀ ਹਦਾਇਤਾਂ ਅਤੇ ਸਰਟੀਫਿਕੇਸ਼ਨ">NHB Guidelines and Certification</h3>
+      <p
+        data-en="Our nursery is registered with the National Horticulture Board..."
+        data-hi="हमारी नर्सरी राष्ट्रीय बागवानी बोर्ड में पंजीकृत है..."
+        data-pa="ਸਾਡੀ ਨਰਸਰੀ ਨੇਸ਼ਨਲ ਹੋਰਟੀਕਲਚਰ ਬੋਰਡ ਵਿੱਚ ਰਜਿਸਟਰ ਹੈ...">
+        Our nursery is registered with the National Horticulture Board...
+      </p>
     </section>
 
     <section class="compliance">
-      <h3>Our Commitments</h3>
-      <p>At Om Vishnu Fruit Nursery, we sell plants only after fulfilling all required NHB guidelines and health certification processes. We prioritize our customer's trust and aim to deliver healthy, high-quality plants with verified documentation and inspection.</p>
+      <h3
+        data-en="Our Commitments"
+        data-hi="हमारी प्रतिबद्धताएं"
+        data-pa="ਸਾਡੀਆਂ ਵਚਨਬੱਧਤਾਵਾਂ">Our Commitments</h3>
+      <p
+        data-en="We prioritize customer trust and ensure healthy, certified plants."
+        data-hi="हम ग्राहक के विश्वास को प्राथमिकता देते हैं और स्वस्थ, प्रमाणित पौधों की गारंटी देते हैं।"
+        data-pa="ਅਸੀਂ ਗਾਹਕਾਂ ਦੇ ਭਰੋਸੇ ਨੂੰ ਪਹਿਲ ਦਿੰਦੇ ਹਾਂ ਅਤੇ ਸਿਹਤਮੰਦ, ਸਰਟੀਫਾਈਡ ਪੌਦੇ ਯਕੀਨੀ ਬਣਾਉਂਦੇ ਹਾਂ।">
+        We prioritize customer trust and ensure healthy, certified plants.
+      </p>
     </section>
   </div>
 
-  <footer>
-    &copy; 2025 Om Vishnu Fruit Nursery
+  <footer
+    data-en="© 2025 Om Vishnu Fruit Nursery"
+    data-hi="© 2025 ॐ विष्णु फ्रूट नर्सरी"
+    data-pa="© 2025 ਓਮ ਵਿਸ਼ਨੂ ਫਲ ਨਰਸਰੀ">
+    © 2025 Om Vishnu Fruit Nursery
   </footer>
 
   <script>
     function switchLanguage(lang) {
       document.querySelectorAll('[data-en]').forEach(el => {
-        el.innerText = el.getAttribute(`data-${lang}`);
+        const translation = el.getAttribute(`data-${lang}`);
+        if (translation) el.innerText = translation;
       });
+      localStorage.setItem('preferredLang', lang);
     }
+
+    // Set default language on load
+    window.onload = () => {
+      const savedLang = localStorage.getItem('preferredLang') || 'en';
+      switchLanguage(savedLang);
+    };
 
     let cart = [];
     function addToCart(productName) {
@@ -231,7 +308,7 @@
     function updateCartUI() {
       const cartList = document.getElementById('cart-items');
       cartList.innerHTML = '';
-      cart.forEach((item, index) => {
+      cart.forEach(item => {
         const li = document.createElement('li');
         li.textContent = item;
         cartList.appendChild(li);
@@ -246,6 +323,7 @@
   </script>
 </body>
 </html>
+
 
 
 
